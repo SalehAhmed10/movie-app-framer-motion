@@ -20,7 +20,7 @@ function Filter({ popular, setFiltered, activeGenre, setActiveGenre }) {
     return (
         <div className="filter-container my-10">
             <button
-                className={`mr-[2rem] min-w[5em] px-5 py-1 rounded-3xl text-purplecolor border-solid border-2 border-purplecolor ${activeGenre === 0 ? `${active}` : ''}`}
+                className={`mr-[1rem] min-w[5em] px-5 py-1 rounded-3xl text-purplecolor border-solid border-2 border-purplecolor ${activeGenre === 0 ? `${active}` : ''}`}
 
                 onClick={() => {
                     setActiveGenre(0)
@@ -29,7 +29,7 @@ function Filter({ popular, setFiltered, activeGenre, setActiveGenre }) {
                 All
             </button>
             <button
-                className={`mr-[2rem] min-w[5em] px-5 py-1 rounded-3xl text-purplecolor border-solid border-2 border-purplecolor
+                className={`mr-[1rem] min-w[5em] px-5 py-1 rounded-3xl text-purplecolor border-solid border-2 border-purplecolor
                 ${activeGenre === 35 ? `${active}` : ''}`}
 
                 onClick={() => {
@@ -39,7 +39,7 @@ function Filter({ popular, setFiltered, activeGenre, setActiveGenre }) {
                 Comedy
             </button>
             <button
-                className={`mr-[2rem] min-w[5em] px-5 py-1 rounded-3xl text-purplecolor border-solid border-2 border-purplecolor
+                className={`mr-[1rem] min-w[5em] px-5 py-1 rounded-3xl text-purplecolor border-solid border-2 border-purplecolor
                 active:text-white ${activeGenre === 28 ? `${active}` : ''
                     }`}
                 onClick={() => {

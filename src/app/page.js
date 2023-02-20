@@ -22,17 +22,21 @@ export default function Home() {
     const data = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${process.env.NEXT_PUBLIC_API_KEY}&language=en-US&page=1`)
     const movies = await data.json()
     setPopular(movies.results)
-    console.table(movies.results);
+    // console.table(movies.results);
     setFiltered(movies.results)
 
   }
 
   return (
-    <main className='container mx-auto'>
+    <main className='container mx-auto mb-10 px-5 md:px-20'>
 
 
+      {/* gradient h1 */}
 
-      <h1 className='text-4xl font-bold text-center my-10'>Popular Movies</h1>
+      <div className="flex flex-col justify-center items-center text-center my-10">
+        <h5 className="text-3xl font-extrabold text-gray-700 ">Popular Movies</h5>
+      </div>
+
       <Filter popular={popular} setFiltered={setFiltered} activeGenre={activeGenre} setActiveGenre={setActiveGenre} />
 
       <div className="results mb-5">
